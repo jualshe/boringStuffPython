@@ -1,4 +1,5 @@
-spam = 0
-while spam < 5:
-    print('hi there!')
-    spam = spam + 1
+name = ''
+while name != 'your name':
+    print("please type your name.")
+    name = input()
+print('Thank you!')
