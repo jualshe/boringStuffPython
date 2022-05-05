@@ -5,10 +5,16 @@
 # hello()
 # hello()
 # hello()
+#
+# def hello(name):
+#     print('hi ' + name)
+#
+# hello('Alice')
+# hello('BBobb')
 
-def hello(name):
-    print('hi ' + name)
+def plusOne(number):
+    return number + 1
 
 
-hello('Alice')
-hello('BBobb')
+newNumber = plusOne(5)
+print(newNumber)
