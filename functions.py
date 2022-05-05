@@ -10,7 +10,7 @@
 #     print('hi ' + name)
 #
 # hello('Alice')
-# hello('BBobb')
+# hello('Bob')
 
 def plusOne(number):
     return number + 1
