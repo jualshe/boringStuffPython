@@ -4,6 +4,8 @@ numCats = input()
 try:
     if int(numCats) >= 4:
         print('that is a lot of cats!')
+    elif int(numCats) < 0:
+        print('you entered negative number')
     else:
         print('That is not that many cats')
 except ValueError:
@@ -11,7 +13,7 @@ except ValueError:
 
 # # handle errors with try and except Statement
 # def div42by(divideBy):
-#     try:
+#     try:s
 #         return 42 / divideBy
 #     except ZeroDivisionError:
 #         print('Error: you tried to divide yb zero')
