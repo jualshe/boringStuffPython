@@ -13,7 +13,7 @@ except ValueError:
 
 # # handle errors with try and except Statement
 # def div42by(divideBy):
-#     try:s
+#     try:
 #         return 42 / divideBy
 #     except ZeroDivisionError:
 #         print('Error: you tried to divide yb zero')
