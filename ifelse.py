@@ -20,7 +20,7 @@ else:
 # -----if else statement
 # password = 'swordfish'
 # if password == 'swordfish':
-#     print('Acces granted.')
+#     print('Access granted.')
 # else:
 #     print('Wrong password.')
 
