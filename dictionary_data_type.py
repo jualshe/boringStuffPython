@@ -16,6 +16,26 @@ ham = {'species': 'cat', 'age': '8', 'name': 'Zophie'}
 # print('name' in eggs)
 # print('name' not in eggs)
 
-print(eggs.keys())
-print(eggs.values())
-print(eggs.items())
+# print(eggs.keys())
+# print(eggs.values())
+# print(eggs.items())
+
+for k in eggs.keys():
+    print(k)
+
+for v in eggs.values():
+    print(v)
+
+for i in eggs.items():
+    print(i)
+
+for k, v in eggs.items():
+    print(k, v)
+
+print('cat' in eggs.values())
+
+if 'color' in eggs:
+    print(eggs['color'])
+
+if 'name' in eggs:
+    print(eggs['name'])
