@@ -43,3 +43,18 @@ ham = {'species': 'cat', 'age': '8', 'name': 'Zophie'}
 
 print(eggs.get('age', 0))
 print(eggs.get('color', 'no color'))
+
+picknicItems = {'apples': 5, 'cups': 2}
+print('I am bringing ' + str(picknicItems.get('napkins', 0)) + ' to the picnic.')
+
+# if 'color' not in eggs:
+#     eggs['color'] = 'black'
+
+eggs.setdefault('color', 'blue')
+
+print(eggs.get('color'))
+
+print(eggs)
+
+eggs.setdefault('color', 'pink')
+print(eggs)
