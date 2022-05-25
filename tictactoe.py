@@ -1,8 +1,14 @@
-import pprint
+theBoard = {'top-L': 'O', 'top-M': 'O', 'top-R': 'O',
+            'mid-L': 'X', 'mid-M': 'X', 'mid-R': '',
+            'low-L': ' ', 'low-M': ' ', 'low-R': 'X'}
 
-theBoard = {'top-L': '', 'top-M': '', 'top-R': '', 'mid-L': 'X', 'mid-M': '', 'mid-R': '', 'low-L': '', 'low-M': '',
-            'low-R': ''}
-pprint.pprint(theBoard)
 
-theBoard['mid-L'] = ''
-pprint.pprint(theBoard)
+def printBoard(board):
+    print(board['top-L'] + '|' + board['top-M'] + '|' + board['top-R'])
+    print('-----')
+    print(board['mid-L'] + '|' + board['mid-M'] + '|' + board['mid-R'])
+    print('-----')
+    print(board['low-L'] + '|' + board['low-M'] + '|' + board['low-R'])
+
+
+printBoard(theBoard)
