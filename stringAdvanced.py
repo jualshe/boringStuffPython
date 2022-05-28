@@ -17,4 +17,9 @@ spam = """Dear Bob,
 your cat has been arrested.
 Sincerely,
 Nate"""
-print(spam)
+print(spam[0])
+print(spam[5:21])
+print(spam[-4:-1:2])
+
+print('cat' in spam)
+print('x' in spam)
