@@ -1,6 +1,6 @@
 spam = 'Hello world!'
-# print(spam.upper())
-# print(spam)
+print(spam.upper())
+print(spam)
 #
 # spam = spam.upper()
 # print(spam)
@@ -16,3 +16,9 @@ spam = 'Hello world!'
 spam = 'hello world!'
 print(spam.isupper())
 print(spam.islower())
+
+print('This Is Title Case'.istitle())
+
+print('Hi!'.startswith('H'))
+
+print(','.join(['cats', 'llamas','copybaras']))
