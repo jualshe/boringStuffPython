@@ -1,4 +1,4 @@
-# spam = 'Hello world!'
+spam = 'Hello world!'
 # print(spam.upper())
 # print(spam)
 #
@@ -6,9 +6,13 @@
 # print(spam)
 # print('\n\n' + spam.lower())
 
-print('Enter your answer')
-answer = input()
-print(answer)
-# answer.lower() == 'yes'
-if answer.lower() == 'yes':
-    print('Playing again')
+# print('Enter your answer - yes?')
+# answer = input()
+# # print(answer)
+# # answer.lower() == 'yes'
+# if answer.lower() == 'yes':
+#     print('Playing again')
+
+spam = 'hello world!'
+print(spam.isupper())
+print(spam.islower())
