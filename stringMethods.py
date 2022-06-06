@@ -1,7 +1,7 @@
-spam = 'Hello world!'
-print(spam.upper())
-print(spam)
-#
+# spam = 'Hello world!'
+# print(spam.upper())
+# print(spam)
+# #
 # spam = spam.upper()
 # print(spam)
 # print('\n\n' + spam.lower())
@@ -12,22 +12,40 @@ print(spam)
 # # answer.lower() == 'yes'
 # if answer.lower() == 'yes':
 #     print('Playing again')
+#
+# spam = 'hello world!'
+# print(spam.isupper())
+# # print(spam.islower())
+#
+# print('This Is Title Case'.istitle())
+#
+# print('Hi!'.startswith('H'))
+#
+# print(','.join(['cats', 'llamas','copybaras']))
+# ko='JULI'
+# print(' kaka\n'.join(ko))
+#
+# print('My name is Juju'.split())
 
-spam = 'hello world!'
-print(spam.isupper())
-# print(spam.islower())
+name='Hello'
+name1 = name.rjust(10)
+name2= name1.ljust(20, '*')
+print(name2)
 
-print('This Is Title Case'.istitle())
+print(len(name2))
 
-print('Hi!'.startswith('H'))
+nameJ='Julia'
+nameJ= nameJ.center(20,'=')
+print(nameJ)
 
-print(','.join(['cats', 'llamas','copybaras']))
-ko='JULI'
-print(' kaka\n'.join(ko))
+print('    x    '.split())
 
-print('My name is Juju'.split())
+print('SpamSpamEggSpamBaconSpam'.strip('ampS'))
 
-name='My name is Juju'
-print(name.rjust(10))
-print(name)
-print(len(name))
+spam = 'Hello there!'
+spam = spam.replace('e', 'Z')
+print(spam)
+
+# import pyperclip
+# pyperclip.copy('Hello!!!!!!')
+# pyperclip.paste()
