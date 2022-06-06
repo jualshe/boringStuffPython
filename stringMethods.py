@@ -26,3 +26,8 @@ ko='JULI'
 print(' kaka\n'.join(ko))
 
 print('My name is Juju'.split())
+
+name='My name is Juju'
+print(name.rjust(10))
+print(name)
+print(len(name))
