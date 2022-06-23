@@ -1,5 +1,5 @@
 import re
-
+# ? means 0 or one
 phoneRegex = re.compile(r'(\d\d\d-)?\d\d\d\-\d\d\d\d')
 mo = phoneRegex.search('My phone number is 650-555-4242') #match object
 print(mo.group())
@@ -26,3 +26,14 @@ print(mo.group())
 regex = re.compile(r'\+\*\?')
 mo = regex.search('I am learning about +*? regex syntax')
 print(mo.group())
+
+# {}specific number of repetition
+
+haRegex = re.compile(r'(Ha){3}')
+mo = haRegex.search('She said "HaHaHa" ')
+print(mo.group())
+
+haRegex = re.compile(r'HaHaHa')
+mo = haRegex.search('She said "HaHaHa" ')
+print(mo.group())
+
