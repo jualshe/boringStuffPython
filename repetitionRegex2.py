@@ -21,3 +21,8 @@ batRegex = re.compile(r'Bat(wo)+man')
 mo = batRegex.search('The adventure of Batman') #doens't show in the results
 mo = batRegex.search('The adventure of Batwoman') #wo is shown at least once
 print(mo.group())
+
+#literal symbols matching
+regex = re.compile(r'\+\*\?')
+mo = regex.search('I am learning about +*? regex syntax')
+print(mo.group())
