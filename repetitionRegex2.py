@@ -53,6 +53,10 @@ haRegex = re.compile(r'(Ha){3,}')
 mo = haRegex.search('She said "HaHaHaHaHaHaHa" ')
 print(mo.group())
 
-digitRegex = re.compile(r'(\d){3,5}')
+digitRegex = re.compile(r'(\d){3,5}') #greedy match
 mo = digitRegex.search('123456789')
-print(mo.group()) #greedy match 
+print(mo.group())
+
+digitRegex = re.compile(r'(\d){3,5}?') #non-greedy match
+mo = digitRegex.search('123456789')
+print(mo.group())
