@@ -37,3 +37,22 @@ haRegex = re.compile(r'HaHaHa')
 mo = haRegex.search('She said "HaHaHa" ')
 print(mo.group())
 
+phoneRegex = re.compile(r'((\d\d\d-)?\d\d\d-\d\d\d\d(, )?){3}')
+mo = phoneRegex.search('My numbers are 415-555-1234, 555-4242, 650-123-4567')
+print(mo.group())
+
+
+haRegex = re.compile(r'(Ha){3,5}')
+mo = haRegex.search('She said "HaHaHa" ')
+print(mo.group())
+
+mo = haRegex.search('She said "HaHaHaHaHaHaHa" ')
+print(mo.group())
+
+haRegex = re.compile(r'(Ha){3,}')
+mo = haRegex.search('She said "HaHaHaHaHaHaHa" ')
+print(mo.group())
+
+digitRegex = re.compile(r'(\d){3,5}')
+mo = digitRegex.search('123456789')
+print(mo.group()) #greedy match 
