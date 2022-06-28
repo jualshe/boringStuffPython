@@ -31,7 +31,7 @@ mo = doubbleVowelRegex.findall('Robocop eats baby food.')
 print(mo)
 
 #neagtive character classes
-consonantsRegex = re.compile(r'[^aeiouAEOIU]') #find all instead of selected
+consonantsRegex = re.compile(r'[^aeiouAEOIU]') #find all instead of selected, includes punctuations and spaces
 mo = consonantsRegex.findall('Robocop eats baby food.')
 print(mo)
 
