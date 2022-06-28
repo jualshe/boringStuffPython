@@ -13,5 +13,8 @@ mo = endsWithWordRegex.search('Hello world!')
 print(mo)
 
 allDigitsRegex = re.compile(r'^\d+$')
+mo = allDigitsRegex.search('123456789')
+print(mo)
+
 mo = allDigitsRegex.search('12345x6789')
 print(mo)
