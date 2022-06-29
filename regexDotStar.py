@@ -21,6 +21,9 @@ print(mo)
 
 #anything except newline
 
-atRegex = re.compile(r'..at')
+# atRegex = re.compile(r'..at')
+atRegex = re.compile(r'.{1,2}at')
 mo = atRegex.findall('The cat inn the hat sat on the flat mat')
 print(mo)
+
+#dot star pattern .*
