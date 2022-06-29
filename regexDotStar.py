@@ -18,3 +18,9 @@ print(mo)
 
 mo = allDigitsRegex.search('12345x6789')
 print(mo)
+
+#anything except newline
+
+atRegex = re.compile(r'.at')
+mo = atRegex.findall('The cat inn the hat sat on the flat mat')
+print(mo)
