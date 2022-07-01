@@ -27,3 +27,5 @@ mo = atRegex.findall('The cat inn the hat sat on the flat mat')
 print(mo)
 
 #dot star pattern .*
+
+a = 'First Name: Al Last Name: Sweigart'
