@@ -29,7 +29,7 @@ print(mo)
 
 # dot star pattern .*
 
-a = 'First Name: Al Last Name: Sweigart'
+a = 'First Name: Al Alik Last Name: Sweigart'
 print(a.find(':'))
 print(a.find(':') + 2)
 print(a[12:])
