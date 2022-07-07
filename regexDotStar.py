@@ -37,3 +37,15 @@ print(a[12:])
 nameRegex = re.compile(r'First Name: (.*) Last Name: (.*)')
 mo = nameRegex.findall(a)
 print(mo)
+
+# greedy/non-gready matching
+
+serve = '<To serve humans> for dinner. kaka!>>'
+
+nongreedy = re.compile(r'<(.*?)>')
+mo = nongreedy.findall(serve)
+print(mo)
+
+greedy = re.compile(r'<(.*)>')
+mo = greedy.findall(serve)
+print(mo)
