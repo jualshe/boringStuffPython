@@ -5,7 +5,7 @@ import re, pyperclip
 re.compile(r'''
 #415-555-0000, 555-0000, (415) 555-0000, 555-0000 ext 12345, ext 12345, x12345
 
-        # area code (optional)
+((\d\d\d) | (\(\d\d\d))?  # area code (optional)
         # firts separator
         # first 3 digits
         # separator 
