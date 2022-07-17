@@ -10,8 +10,8 @@ re.compile(r'''
 \d\d\d        # first 3 digits
 -        # separator 
 \d\d\d\d        # last 4 digits
-        #extension (optional)
-
+((ext(\.)?\s)|x)    #extension (optional)
+(\d{2,5})        #extension number-part (optional)
 ''', re.VERBOSE)
 
 # TODO: create a regex for email addresses
