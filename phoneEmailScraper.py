@@ -21,10 +21,11 @@ phoneRegex = re.compile(r'''
 # TODO: create a regex for email addresses
 emailRegex = re.compile(r'''
 # some.+_thing@something.com
+(
 [a-zA-Z0-9_.+]+    #name part
 @                  # @symbol
-[a-zA-Z0-9_.+]+    #domain part
-''')
+[a-zA-Z0-9_.+]+ )   #domain part
+''', re.VERBOSE)
 
 # Get the text off the clipbboard
 text = pyperclip.paste()
@@ -37,6 +38,21 @@ allPhoneNumbers = []
 for phoneNumber in extractedPhone:
     allPhoneNumbers.append(phoneNumber[0])
 
-print(extractedPhone)
+print(allPhoneNumbers)
 print(extractedEmail)
 # TODO: copy the extracted email/phone to the clipboard
+
+# 2124567890
+# 212-456-7890
+# (212)456-7890
+# (212)-456-7890
+# 212.456.7890
+# 212 456 7890
+# +12124567890
+# +12124567890
+# +1 212.456.7890
+# +212-456-7890
+# 1-212-456-7890
+# firstname.secondname@domain.com. Example: peter.parker@zylker.com. ...
+# firstname.initial@domain.com. Example: peter.p@zylker.com. ...
+# firstname@domain.com. Example: peter@zylker.com.
