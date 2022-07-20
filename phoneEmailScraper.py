@@ -34,7 +34,8 @@ extractedPhone = phoneRegex.findall(text)
 extractedEmail = emailRegex.findall(text)
 
 allPhoneNumbers = []
-for phoneN
+for phoneNumber in extractedPhone:
+    allPhoneNumbers.append(phoneNumber[0])
 
 print(extractedPhone)
 print(extractedEmail)
