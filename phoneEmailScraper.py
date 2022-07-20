@@ -41,19 +41,7 @@ for phoneNumber in extractedPhone:
 
 print(allPhoneNumbers)
 print(extractedEmail)
-# TODO: copy the extracted email/phone to the clipboard
 
-# 2124567890
-# 212-456-7890
-# (212)456-7890
-# (212)-456-7890
-# 212.456.7890
-# 212 456 7890
-# +12124567890
-# +12124567890
-# +1 212.456.7890
-# +212-456-7890
-# 1-212-456-7890
-# firstname.secondname@domain.com. Example: peter.parker@zylker.com. ...
-# firstname.initial@domain.com. Example: peter.p@zylker.com. ...
-# firstname@domain.com. Example: peter@zylker.com.
+# TODO: copy the extracted email/phone to the clipboard
+results = '\n'.join(allPhoneNumbers) + '\n' + '\n'.join(extractedEmail)
+pyperclip.copy(results)
