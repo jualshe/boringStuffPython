@@ -26,3 +26,5 @@ print(os.path.isdir('/Users/julia/dev/images/beach.jpg'))
 
 print(os.path.getsize('/Users/julia/dev/images/beach.jpg'))
 print(os.listdir('/Users/julia/dev/GitHub'))
+
+os.makedirs()
