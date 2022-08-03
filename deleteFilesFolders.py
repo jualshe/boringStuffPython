@@ -1,17 +1,15 @@
 import os, shutil
 import send2trash
 
-send2trash.send2trash('/Users/julia/Desktop/sofa1.png')
+# send2trash.send2trash('/Users/julia/Desktop/sofa1.png')
 
 os.getcwd()
 # os.unlink('')
 
 # delete empty folder
-# os.rmdir('')  
+# os.rmdir('')
 
 # delete folder and content
-
-
 # shutil.rmtree('')
 
 os.chdir('/Users/julia/Desktop')
