@@ -5,8 +5,6 @@
 *               *
 *               *
 *****************
-
-
 """
 
 
@@ -19,12 +17,24 @@ def boxPrint(symbol, width, height):
 
     for i in range(height - 2):
         print(symbol + (' ' * (width - 2)) + symbol)
-
     print(symbol * width)
 
+
+import traceback
+
+try:
+    raise Exception('This is the error message.')
+except:
+    errorFile = open('error_log.txt', 'a')
+    errorFile.write(traceback.format_exc())
+    errorFile.close()
+    print('Traceback info was written error_log.txt')
 
 boxPrint('*', 15, 5)
 boxPrint('~', 25, 5)
 boxPrint('~', 25, 1)
-# raise Exception('This is the error message.')
 boxPrint('**', 15, 5)
+
+import os
+
+print(os.getcwd())
