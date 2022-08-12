@@ -16,6 +16,8 @@ def switchLights(intersection):
     assert 'red' in intersection.values(), 'Neither light is red!' + str(intersection)
 
 
+# assert that this condition is always holds true, if not- there is a bug in a program
+
 print(market_2nd)
 switchLights(market_2nd)
 print(market_2nd)
