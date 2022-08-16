@@ -1,5 +1,9 @@
 import logging
 
+# import sys
+#
+# print(sys.path)
+
 print(logging.__file__)
 #
 # logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(messages)s')
