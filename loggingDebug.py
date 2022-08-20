@@ -20,4 +20,4 @@ def factorial(n):
     return total
 
 
-print(factorial(7))
+print('The factorial result is ' + str(factorial(7)))
