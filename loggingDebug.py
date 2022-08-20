@@ -1,6 +1,7 @@
 import logging
 
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(messages)s')
+logging.basicConfig(level=logging.DEBUG)
+# , format='%(asctime)s - %(levelname)s - %(messages)s')
 # write log to a file
 # logging.basicConfig(filename='testLogDebug.txt', format='%(asctime)s - %(levelname)s - %(messages)s')
 # logging.disable(logging.CRITICAL)
