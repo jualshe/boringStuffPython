@@ -3,12 +3,10 @@ import os
 
 workbook = openpyxl.Workbook()
 print(workbook)
-
 print(workbook.get_sheet_names())
 
 sheet = workbook.get_sheet_by_name('Sheet')
 print(sheet)
-
 print(sheet['A1'].value)
 
 sheet['A1'] = 42
