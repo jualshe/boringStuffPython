@@ -1,5 +1,3 @@
-import datetime
-
 import openpyxl
 import os
 
@@ -15,6 +13,7 @@ print(type(sheet))
 cell = sheet['A1']
 print(str(cell.value))
 
+print(str(sheet['A1'].value))
 print(str(sheet['C1'].value))
 
 # these are the same
