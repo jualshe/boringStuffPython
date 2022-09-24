@@ -13,3 +13,5 @@ connection.starttls()
 connection.login('', '')
 # enter email from and email to
 connection.sendmail('', '', 'Subject: test subject \n\n Hi there! \n how are you? \n\n - Julia ')
+
+connection.quit()
