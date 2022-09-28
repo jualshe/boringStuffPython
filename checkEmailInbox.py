@@ -21,4 +21,12 @@ message.html_part == None
 message.text_part.charset == None
 # if True - then the decode will bbe UTF-8
 message.text_part.get_payload().decode('UTF-8')
+conn.list_folders()
+
+# delete email
+conn.select_folder('INBOX', readonly=False)
+UIDs = conn.search(['ON 24-Aug-2022'])
+conn.delete_messages([43434])
+# conn.delete_messages(UIDs)
+
 conn.logout()
